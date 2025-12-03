@@ -1,0 +1,132 @@
+{
+    "weather_uuid": {
+        "name": "weather_uuid",
+        "description": "Unique identifier for each weather record",
+        "type": "string"
+    },
+    "date": {
+        "name": "date",
+        "description": "Date of the weather observation",
+        "type": "datetime"
+    },
+    "temperature_2m": {
+        "name": "temperature_2m",
+        "description": "Temperature at 2 meters above ground level in celsius",
+        "type": "float"
+    },
+    "relative_humidity_2m": {
+        "name": "relative_humidity_2m",
+        "description": "Relative humidity at 2 meters above ground level in percentage",
+        "type": "float"
+    },
+    "dew_point_2m": {
+        "name": "dew_point_2m",
+        "description": "Dew point temperature at 2 meters above ground level in celsius",
+        "type": "float"
+    },
+    "apparent_temperature": {
+        "name": "apparent_temperature",
+        "description": "Apparent temperature, also known as the 'feels like' temperature in celsius",
+        "type": "float"
+    },
+    "precipitation": {
+        "name": "precipitation",
+        "description": "Total precipitation amount in millimeters",
+        "type": "float"
+    },
+    "rain": {
+        "name": "rain",
+        "description": "Amount of rainfall in millimeters",
+        "type": "float"
+    },
+    "snowfall": {
+        "name": "snowfall",
+        "description": "Amount of snowfall in millimeters",
+        "type": "float"
+    },
+    "snow_depth": {
+        "name": "snow_depth",
+        "description": "Depth of snow on the ground in millimeters",
+        "type": "float"
+    },
+    "weather_code": {
+        "name": "weather_code",
+        "description": "Code representing the weather conditions in WMO code",
+        "type": "float"
+    },
+    "pressure_msl": {
+        "name": "pressure_msl",
+        "description": "Atmospheric pressure at mean sea level in hectopascals",
+        "type": "float"
+    },
+    "surface_pressure": {
+        "name": "surface_pressure",
+        "description": "Atmospheric pressure at the surface in hectopascals",
+        "type": "float"
+    },
+    "cloud_cover": {
+        "name": "cloud_cover",
+        "description": "Fraction of the sky covered by clouds in percentage",
+        "type": "float"
+    },
+    "cloud_cover_low": {
+        "name": "cloud_cover_low",
+        "description": "Fraction of the sky covered by low-level clouds in percentage",
+        "type": "float"
+    },
+    "cloud_cover_mid": {
+        "name": "cloud_cover_mid",
+        "description": "Fraction of the sky covered by mid-level clouds in percentage",
+        "type": "float"
+    },
+    "cloud_cover_high": {
+        "name": "cloud_cover_high",
+        "description": "Fraction of the sky covered by high-level clouds in percentage",
+        "type": "float"
+    },
+    "et0_fao_evapotranspiration": {
+        "name": "et0_fao_evapotranspiration",
+        "description": "Reference evapotranspiration calculated using the FAO Penman-Monteith method in millimeters per day",
+        "type": "float"
+    },
+    "vapour_pressure_deficit": {
+        "name": "vapour_pressure_deficit",
+        "description": "Difference between the amount of moisture in the air and how much moisture the air can hold when it is saturated in kilopascals",
+        "type": "float"
+    },
+    "wind_speed_10m": {
+        "name": "wind_speed_10m",
+        "description": "Wind speed at 10 meters above ground level in kilometers per hour",
+        "type": "float"
+    },
+    "soil_temperature_0_to_7cm": {
+        "name": "soil_temperature_0_to_7cm",
+        "description": "Soil temperature at a depth of 0 to 7 centimeters in celsius",
+        "type": "float"
+    },
+    "soil_moisture_0_to_7cm": {
+        "name": "soil_moisture_0_to_7cm",
+        "description": "Soil moisture at a depth of 0 to 7 centimeters in m3/m3",
+        "type": "float"
+    },
+    "soil_temperature_7_to_28cm": {
+        "name": "soil_temperature_7_to_28cm",
+        "description": "Soil temperature at a depth of 7 to 28 centimeters in celsius",
+        "type": "float"
+    },
+    "soil_moisture_7_to_28cm": {
+        "name": "soil_moisture_7_to_28cm",
+        "description": "Soil moisture at a depth of 7 to 28 centimeters in m3/m3",
+        "type": "float"
+    },
+    "wind_speed_100m": {
+        "name": "wind_speed_100m",
+        "description": "Wind speed at 100 meters above ground level in kilometers per hour",
+        "type": "float"
+    },
+    "city": {
+        "name": "city",
+        "description": "Name of the city where the weather observation was recorded",
+        "type": "string"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "station_uuid": {
+        "name": "station_uuid",
+        "description": "Unique identifier for the station",
+        "type": "string"
+    },
+    "original_station_id": {
+        "name": "original_station_id",
+        "description": "Original ID of the station from the source data",
+        "type": "int"
+    },
+    "latitude": {
+        "name": "latitude",
+        "description": "Latitude coordinate of the station",
+        "type": "float"
+    },
+    "longitude": {
+        "name": "longitude",
+        "description": "Longitude coordinate of the station",
+        "type": "float"
+    },
+    "station_name": {
+        "name": "station_name",
+        "description": "Name of the station",
+        "type": "string"
+    },
+    "city": {
+        "name": "city",
+        "description": "City where the station is located",
+        "type": "string"
+    },
+    "zip_code_uuid": {
+        "name": "zip_code_uuid",
+        "description": "Unique identifier for the zip code associated with the station",
+        "type": "string"
+    }
+}

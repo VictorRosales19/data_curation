@@ -1,0 +1,162 @@
+{
+    "trip_uuid": {
+        "name": "trip_uuid",
+        "description": "Unique identifier for each trip",
+        "type": "string"
+    },
+    "start_time": {
+        "name": "start_time",
+        "description": "Start time of the trip",
+        "type": "datetime"
+    },
+    "end_time": {
+        "name": "end_time",
+        "description": "End time of the trip",
+        "type": "datetime"
+    },
+    "member_type": {
+        "name": "member_type",
+        "description": "Type of membership of the user",
+        "type": "string"
+    },
+    "duration": {
+        "name": "duration",
+        "description": "Duration of the trip in seconds",
+        "type": "float"
+    },
+    "start_station_uuid": {
+        "name": "start_station_uuid",
+        "description": "Unique identifier for the start station",
+        "type": "string"
+    },
+    "end_station_uuid": {
+        "name": "end_station_uuid",
+        "description": "Unique identifier for the end station",
+        "type": "string"
+    },
+    "bike_uuid": {
+        "name": "bike_uuid",
+        "description": "Unique identifier for the bike used in the trip",
+        "type": "string"
+    },
+    "station_uuid_start": {
+        "name": "station_uuid_start",
+        "description": "Unique identifier for the start station",
+        "type": "string"
+    },
+    "original_station_id_start": {
+        "name": "original_station_id_start",
+        "description": "Original identifier for the start station",
+        "type": "int"
+    },
+    "latitude_start": {
+        "name": "latitude_start",
+        "description": "Latitude of the start station",
+        "type": "float"
+    },
+    "longitude_start": {
+        "name": "longitude_start",
+        "description": "Longitude of the start station",
+        "type": "float"
+    },
+    "station_name_start": {
+        "name": "station_name_start",
+        "description": "Name of the start station",
+        "type": "string"
+    },
+    "city_start": {
+        "name": "city_start",
+        "description": "City of the start station",
+        "type": "string"
+    },
+    "zip_code_uuid_start": {
+        "name": "zip_code_uuid_start",
+        "description": "Zip code of the start station",
+        "type": "string"
+    },
+    "station_uuid_end": {
+        "name": "station_uuid_end",
+        "description": "Unique identifier for the end station",
+        "type": "string"
+    },
+    "original_station_id_end": {
+        "name": "original_station_id_end",
+        "description": "Original identifier for the end station",
+        "type": "int"
+    },
+    "latitude_end": {
+        "name": "latitude_end",
+        "description": "Latitude of the end station",
+        "type": "float"
+    },
+    "longitude_end": {
+        "name": "longitude_end",
+        "description": "Longitude of the end station",
+        "type": "float"
+    },
+    "station_name_end": {
+        "name": "station_name_end",
+        "description": "Name of the end station",
+        "type": "string"
+    },
+    "city_end": {
+        "name": "city_end",
+        "description": "City of the end station",
+        "type": "string"
+    },
+    "zip_code_uuid_end": {
+        "name": "zip_code_uuid_end",
+        "description": "Zip code of the end station",
+        "type": "string"
+    },
+    "trip_duration_category": {
+        "name": "trip_duration_category",
+        "description": "Category of the trip duration, 0-short ( < 300 sec), 1-medium (300-600 sec), 2-long (> 600 sec)",
+        "type": "int"
+    },
+    "hour_of_day": {
+        "name": "hour_of_day",
+        "description": "Hour of the day when the trip started",
+        "type": "int"
+    },
+    "trip_hour_category": {
+        "name": "trip_hour_category",
+        "description": "Category of the hour of the day, 0 (0-3), 1 (4-7), 2 (8-11), 3 (12-15), 4 (16-19), 5 (20-23)",
+        "type": "int"
+    },
+    "day_of_week": {
+        "name": "day_of_week",
+        "description": "Day of the week when the trip started, 0 (Monday) to 6 (Sunday)",
+        "type": "int"
+    },
+    "is_weekend": {
+        "name": "is_weekend",
+        "description": "Indicates whether the trip started on a weekend (true) or not (false)",
+        "type": "bool"
+    },
+    "month": {
+        "name": "month",
+        "description": "Month when the trip started, 1 (January) to 12 (December)",
+        "type": "int"
+    },
+    "season": {
+        "name": "season",
+        "description": "Season when the trip started, Winter, Spring, Summer, Fall",
+        "type": "string"
+    },
+    "distance_km": {
+        "name": "distance_km",
+        "description": "Distance of the trip in kilometers",
+        "type": "float"
+    },
+    "average_speed_kmh": {
+        "name": "average_speed_kmh",
+        "description": "Average speed during the trip in kilometers per hour",
+        "type": "float"
+    },
+    "trip_distance_category": {
+        "name": "trip_distance_category",
+        "description": "Category of the trip distance, 0-short (< 2 km), 1-medium (2-4 km), 2-long (> 4 km)",
+        "type": "int"
+    }
+}

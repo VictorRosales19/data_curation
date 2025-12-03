@@ -1,0 +1,232 @@
+{
+    "zip_code_uuid": {
+        "name": "zip_code_uuid",
+        "description": "Unique identifier for each zip code area",
+        "type": "string"
+    },
+    "zip_code": {
+        "name": "zip_code",
+        "description": "Postal code for the area",
+        "type": "int"
+    },
+    "median_household_income": {
+        "name": "median_household_income",
+        "description": "Median household income for the area",
+        "type": "float"
+    },
+    "household_income_200000_to_more": {
+        "name": "household_income_200000_to_more",
+        "description": "Number of households with income $200,000 or more",
+        "type": "float"
+    },
+    "household_income_150000_to_199999": {
+        "name": "household_income_150000_to_199999",
+        "description": "Number of households with income $150,000 to $199,999",
+        "type": "float"
+    },
+    "household_income_125000_to_149999": {
+        "name": "household_income_125000_to_149999",
+        "description": "Number of households with income $125,000 to $149,999",
+        "type": "float"
+    },
+    "household_income_100000_to_124999": {
+        "name": "household_income_100000_to_124999",
+        "description": "Number of households with income $100,000 to $124,999",
+        "type": "float"
+    },
+    "household_income_75000_to_99999": {
+        "name": "household_income_75000_to_99999",
+        "description": "Number of households with income $75,000 to $99,999",
+        "type": "float"
+    },
+    "household_income_60000_to_74999": {
+        "name": "household_income_60000_to_74999",
+        "description": "Number of households with income $60,000 to $74,999",
+        "type": "float"
+    },
+    "household_income_50000_to_59999": {
+        "name": "household_income_50000_to_59999",
+        "description": "Number of households with income $50,000 to $59,999",
+        "type": "float"
+    },
+    "household_income_45000_to_49999": {
+        "name": "household_income_45000_to_49999",
+        "description": "Number of households with income $45,000 to $49,999",
+        "type": "float"
+    },
+    "household_income_40000_to_44999": {
+        "name": "household_income_40000_to_44999",
+        "description": "Number of households with income $40,000 to $44,999",
+        "type": "float"
+    },
+    "household_income_35000_to_39999": {
+        "name": "household_income_35000_to_39999",
+        "description": "Number of households with income $35,000 to $39,999",
+        "type": "float"
+    },
+    "household_income_30000_to_34999": {
+        "name": "household_income_30000_to_34999",
+        "description": "Number of households with income $30,000 to $34,999",
+        "type": "float"
+    },
+    "household_income_25000_to_29999": {
+        "name": "household_income_25000_to_29999",
+        "description": "Number of households with income $25,000 to $29,999",
+        "type": "float"
+    },
+    "household_income_20000_to_24999": {
+        "name": "household_income_20000_to_24999",
+        "description": "Number of households with income $20,000 to $24,999",
+        "type": "float"
+    },
+    "household_income_15000_to_19999": {
+        "name": "household_income_15000_to_19999",
+        "description": "Number of households with income $15,000 to $19,999",
+        "type": "float"
+    },
+    "household_income_10000_to_14999": {
+        "name": "household_income_10000_to_14999",
+        "description": "Number of households with income $10,000 to $14,999",
+        "type": "float"
+    },
+    "household_income_1_to_9999": {
+        "name": "household_income_1_to_9999",
+        "description": "Number of households with income $1 to $9,999",
+        "type": "float"
+    },
+    "transportation_work_home_office": {
+        "name": "transportation_work_home_office",
+        "description": "Number of people who work from home",
+        "type": "float"
+    },
+    "transportation_work_taxicab_motorcycle_or_other_means": {
+        "name": "transportation_work_taxicab_motorcycle_or_other_means",
+        "description": "Number of people who commute by taxicab, motorcycle, or other means",
+        "type": "float"
+    },
+    "transportation_work_walked": {
+        "name": "transportation_work_walked",
+        "description": "Number of people who commute by walking",
+        "type": "float"
+    },
+    "transportation_work_bicycle": {
+        "name": "transportation_work_bicycle",
+        "description": "Number of people who commute by bicycle",
+        "type": "float"
+    },
+    "transportation_work_public_transportation": {
+        "name": "transportation_work_public_transportation",
+        "description": "Number of people who commute by public transportation",
+        "type": "float"
+    },
+    "transportation_work_car_truck_van": {
+        "name": "transportation_work_car_truck_van",
+        "description": "Number of people who commute by car, truck, or van",
+        "type": "float"
+    },
+    "individual_with_income": {
+        "name": "individual_with_income",
+        "description": "Number of individuals with income",
+        "type": "float"
+    },
+    "individual_no_income": {
+        "name": "individual_no_income",
+        "description": "Number of individuals with no income",
+        "type": "float"
+    },
+    "widowed": {
+        "name": "widowed",
+        "description": "Number of widowed individuals",
+        "type": "float"
+    },
+    "separated": {
+        "name": "separated",
+        "description": "Number of separated individuals",
+        "type": "float"
+    },
+    "divorced": {
+        "name": "divorced",
+        "description": "Number of divorced individuals",
+        "type": "float"
+    },
+    "married": {
+        "name": "married",
+        "description": "Number of married individuals",
+        "type": "float"
+    },
+    "never_married": {
+        "name": "never_married",
+        "description": "Number of never married individuals",
+        "type": "float"
+    },
+    "median_age_female": {
+        "name": "median_age_female",
+        "description": "Median age of females in the area",
+        "type": "float"
+    },
+    "median_age_male": {
+        "name": "median_age_male",
+        "description": "Median age of males in the area",
+        "type": "float"
+    },
+    "median_age": {
+        "name": "median_age",
+        "description": "Median age of the population in the area",
+        "type": "float"
+    },
+    "population_hipanic_or_latino": {
+        "name": "population_hipanic_or_latino",
+        "description": "Number of people who identify as Hispanic or Latino",
+        "type": "float"
+    },
+    "population_two_or_more_races": {
+        "name": "population_two_or_more_races",
+        "description": "Number of people who identify as two or more races",
+        "type": "float"
+    },
+    "population_other_race": {
+        "name": "population_other_race",
+        "description": "Number of people who identify as other races",
+        "type": "float"
+    },
+    "population_native_hawaiian_and_other_pacific_islander": {
+        "name": "population_native_hawaiian_and_other_pacific_islander",
+        "description": "Number of people who identify as Native Hawaiian and Other Pacific Islander",
+        "type": "float"
+    },
+    "population_asian": {
+        "name": "population_asian",
+        "description": "Number of people who identify as Asian",
+        "type": "float"
+    },
+    "population_american_indian_and_alaska_native": {
+        "name": "population_american_indian_and_alaska_native",
+        "description": "Number of people who identify as American Indian and Alaska Native",
+        "type": "float"
+    },
+    "population_black": {
+        "name": "population_black",
+        "description": "Number of people who identify as Black or African American",
+        "type": "float"
+    },
+    "population_white": {
+        "name": "population_white",
+        "description": "Number of people who identify as White",
+        "type": "float"
+    },
+    "population_female": {
+        "name": "population_female",
+        "description": "Number of females in the population in the area",
+        "type": "float"
+    },
+    "population_male": {
+        "name": "population_male",
+        "description": "Number of males in the population in the area",
+        "type": "float"
+    },
+    "population": {
+        "name": "population",
+        "description": "Total population in the area",
+        "type": "float"
+    }
+}

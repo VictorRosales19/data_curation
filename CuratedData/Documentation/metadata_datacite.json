@@ -1,0 +1,109 @@
+{
+  "identifier": {
+    "identifier":"10.12345/example.doi",
+    "identifierType": "DOI"
+  },
+  "creators": [
+    {
+      "name": "Victor Rosales",
+      "nameType": "Personal",
+      "givenName": "Victor",
+      "familyName": "Rosales",
+      "affiliation": [
+        "University of Illinois Urbana-Champaign",
+        "GitHub:VictorRosales19"
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "Curated Multi-City Bikeshare Dataset (Washington D.C. & Los Angeles) with Weather & Demographics"
+    }
+  ],
+  "publisher": "Victor Rosales (via GitHub)",
+  "publicationYear": 2025,
+  "resourceType": {
+    "resourceTypeGeneral": "Dataset",
+    "resourceType": "Curated Multi-Source Transportation Dataset"
+  },
+  "subjects": [
+    { "subject": "bikeshare" },
+    { "subject": "trip logs" },
+    { "subject": "weather" },
+    { "subject": "mobility data" },
+    { "subject": "demographics" },
+    { "subject": "open data" },
+    { "subject": "feature engineering" },
+    { "subject": "transportation" }
+  ],
+  "descriptions": [
+    {
+      "description": "Source data includes Capital Bikeshare (DDOT), Metro Bike Share (Los Angeles Metro), Open-Meteo weather observations, and ACS 5-year demographic estimates from the U.S. Census Bureau.",
+      "descriptionType": "Other"
+    },
+    {
+      "description": "This dataset contains homogenized bike-share trips for Washington D.C. and Los Angeles combined with contextual weather and zip-level demographic information. The repository includes code for reproducing the pipeline: acquisition, homogenization/cleaning, feature engineering and sample analyses (descriptive & predictive).",
+      "descriptionType": "Abstract"
+    },
+    {
+      "description": "A curated data product for reproducible analysis. See `CuratedData/DataDictionaries` for per-file schemas. The pipeline produces: stations.csv, bikes.csv, trips_{YYYY}_{MM}.csv, features_{YYYY}_{MM}.csv, weather.csv, demographics.csv and supporting JSON files for metadata and provenance.",
+      "descriptionType": "Methods"
+    }
+  ],
+  "language": "en",
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "rightsURI": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "formats": [
+    "text/csv",
+    "application/json",
+    "text/plain"
+  ],
+  "version": "1.0.0",
+  "geoLocations": [
+    {
+      "geoLocationPlace": "Washington, D.C.",
+      "geoLocationBox": {
+         "westBoundLongitude": -77.119759,
+         "eastBoundLongitude": -76.909393,
+         "southBoundLatitude": 38.791645,
+         "northBoundLatitude": 38.995548
+      }
+    },
+    {
+      "geoLocationPlace": "Los Angeles, California",
+      "geoLocationBox": {
+         "westBoundLongitude": -118.668176,
+         "eastBoundLongitude": -118.155289,
+         "southBoundLatitude": 33.703652,
+         "northBoundLatitude": 34.337306
+      }
+    }
+  ],
+  "relatedIdentifiers": [
+    {
+      "relatedIdentifier": "https://github.com/VictorRosales19/data_curation",
+      "relatedIdentifierType": "URL",
+      "relationType": "IsSupplementTo"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Victor Rosales",
+      "contributorType": "DataCurator",
+      "nameType": "Personal"
+    },
+    {
+      "name": "Victor Rosales",
+      "contributorType": "SoftwareDeveloper",
+      "nameType": "Personal"
+    }
+  ],
+  "dates": [
+    { "date": "2025-10-03", "dateType": "Created" },
+    { "date": "2025-12-02", "dateType": "Updated" }
+  ]
+}

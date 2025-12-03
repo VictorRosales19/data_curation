@@ -1,0 +1,17 @@
+{
+    "bike_uuid": {
+        "name": "bike_uuid",
+        "description": "Unique identifier for each bike",
+        "type": "string"
+    },
+    "original_bike_id": {
+        "name": "original_bike_id",
+        "description": "Original identifier for the bike from the source data",
+        "type": "string"
+    },
+    "bike_type": {
+        "name": "bike_type",
+        "description": "Type of the bike (e.g., standard, electric)",
+        "type": "string"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "trip_uuid": {
+        "name": "trip_uuid",
+        "description": "unique identifier for the trip",
+        "type": "string"
+    },
+    "original_trip_id": {
+        "name": "original_trip_id",
+        "description": "original identifier for the trip",
+        "type": "string"
+    },
+    "start_time": {
+        "name": "start_time",
+        "description": "start time of the trip",
+        "type": "datetime"
+    },
+    "end_time": {
+        "name": "end_time",
+        "description": "end time of the trip",
+        "type": "datetime"
+    },
+    "member_type": {
+        "name": "member_type",
+        "description": "type of membership of the user",
+        "type": "string"
+    },
+    "duration": {
+        "name": "duration",
+        "description": "duration of the trip in seconds",
+        "type": "float"
+    },
+    "plan_duration": {
+        "name": "plan_duration",
+        "description": "planned duration of the trip in seconds",
+        "type": "float"
+    },
+    "trip_route_category": {
+        "name": "trip_route_category",
+        "description": "category of the trip route",
+        "type": "string"
+    },
+    "start_station_uuid": {
+        "name": "start_station_uuid",
+        "description": "unique identifier for the start station",
+        "type": "string"
+    },
+    "end_station_uuid": {
+        "name": "end_station_uuid",
+        "description": "unique identifier for the end station",
+        "type": "string"
+    },
+    "bike_uuid": {
+        "name": "bike_uuid",
+        "description": "unique identifier for the bike used in the trip",
+        "type": "string"
+    }
+}
