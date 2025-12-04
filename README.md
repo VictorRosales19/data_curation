@@ -61,3 +61,27 @@ Troubleshooting
 - `uszipcode` may download a zipcode DB on first use — ensure your environment can write to disk.
 - If your editor shows unresolved imports but the code runs inside the venv, make sure your editor uses the venv Python interpreter.
 
+---
+
+## Limitations & Notes
+
+- Data quality: The pipeline attempts to discard anomalous trips (unrealistic speed) — check `feature_engineering.py` for thresholds.
+- Scope: Only Washington D.C. (Capital Bikeshare) and Los Angeles (Metro) are currently implemented.
+- Census calls: `uszipcode` or US Census requests are used to fetch demographics; running without an API key will disable ACS calls.
+-  Prohibited use and conduct:
+    + Use the data or analysus in any unlawful manner or for any unlawful purpose
+    + Attempt to correlate the data with names, addresses, or other personally identifiable information
+
+---
+
+## Note on Data Use & Redistribution
+
+This curated dataset includes raw trip data from Metro Bike Share (Los Angeles) and Capital Bikeshare (Washington, D.C.), combined with weather and U.S. Census demographic data. 
+
+- Metro Bike Share data: redistribution and reuse are subject to Metro’s Terms of Use. Users of this dataset are responsible for verifying and complying with those terms before any public redistribution or commercial use. Please review [Metro - Terms and conditions] (https://bikeshare.metro.net/terms-and-conditions/)
+
+- Capital Bikeshare data: redistribution and reuse are subject to Capital License Agreement. Users of this dataset are responsible for verifying and complying with those terms before any public redistribution. Capital license agreement allows to include the data as source material, in analyses, report, or studies pushblised or distributed for non-comercial purposes. Please review [Capital - Data License Agreement] (https://capitalbikeshare.com/data-license-agreement)
+
+- Open-Meteo weather data: redistribution and reuse are under CC BY 4.0; users must provide attribution. Users of this dataset are responsible for verifying and complying with those terms before any public redistribution or commercial use. Please review [Terms of use] (https://open-meteo.com/en/terms)
+
+- U.S. Census ACS data: This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau. Users of this dataset are responsible for verifying and complying with those terms before any public redistribution or commercial use. Please review [Terms of Service] (https://www.census.gov/data/developers/about/terms-of-service.html)
