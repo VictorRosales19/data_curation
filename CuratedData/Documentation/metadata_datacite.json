@@ -53,8 +53,26 @@
   "language": "en",
   "rightsList": [
     {
-      "rights": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-      "rightsURI": "https://creativecommons.org/licenses/by/4.0/"
+      "rights": "Open Meteo CC BY 4.0",
+      "rightsURI": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsIdentifier": "cc-by-4.0",
+      "rightsIdentifierScheme": "SPDX",
+      "schemeURI": "https://spdx.org/licenses/"
+    },
+    {
+      "rights": "Capital Bikeshare Data License Agreement",
+      "rightsURI": "https://capitalbikeshare.com/data-license-agreement",
+      "description": "Original trip data is allowed as a source material for derived analyses and reports for non-commercial purposes are allowed."
+    },
+    {
+      "rights": "Metro Bikeshare Terms of Use",
+      "rightsURI": "https://bikeshare.metro.net/terms-and-conditions/",
+      "description": "Data provided for research and analysis. Redistribution must comply with Metro terms and cannot imply sponsorship or endorsement."
+    },
+    {
+      "rights": "U.S. Census Terms of Service",
+      "rightsURI": "https://www.census.gov/data/developers/about/terms-of-service.html",
+      "description": "This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau."
     }
   ],
   "formats": [
