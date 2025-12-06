@@ -8,23 +8,21 @@ This script runs the main steps in order:
 It calls the module-level mains from the component modules so each step
 keeps its own CLI/options while allowing a single entrypoint for the full run.
 """
-from __future__ import annotations
 
 import argparse
 import sys
-from typing import List
 
 import SourceCode.DataCuration.data_acquisition as data_acquisition
 import SourceCode.DataCuration.data_cleaning_homogenization as clean_homogenize
 import SourceCode.DataCuration.feature_engineering as feat_enginering
 
 
-def main(argv: List[str] | None = None) -> None:
+def main(argv: list[str] | None = None) -> None:
     """Main function to run the full data curation pipeline end-to-end.
 
     Parameters
     ----------
-    argv : List[str] | None, optional
+    argv : list[str] | None, optional
         Command-line arguments to parse, by default None
     """    
     p = argparse.ArgumentParser(description="Run full data curation pipeline end-to-end")
@@ -95,7 +93,7 @@ def main(argv: List[str] | None = None) -> None:
 
     # 3) Feature engineering
     print("== Step 3: Feature engineering ==")
-    fe_args: List[str] = ["--curated-data", curated]
+    fe_args: list[str] = ["--curated-data", curated]
     if args.features_all:
         fe_args.append("--all")
     elif args.features_year and args.features_month:

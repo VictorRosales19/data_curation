@@ -4,7 +4,6 @@ It is designed to be used as part of an end-to-end data curation process.
 It can be executed as a standalone script or imported as a module.
 """
 
-from typing import List
 import pandas as pd
 import numpy as np
 import argparse
@@ -127,7 +126,7 @@ def haversine_vectorized(df_trips:pd.DataFrame) -> pd.Series:
 ####                                        Main                                       ###
 ##########################################################################################
 
-def main(argv: List[str] | None = None) -> None:
+def main(argv: list[str] | None = None) -> None:
     """Main function to execute feature engineering on monthly trip files.
 
     Usage examples:
@@ -138,7 +137,7 @@ def main(argv: List[str] | None = None) -> None:
 
     Parameters
     ----------
-    argv : List[str] | None, optional
+    argv : list[str] | None, optional
         Command-line arguments to parse, by default None
 
     Raises

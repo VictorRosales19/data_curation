@@ -6,10 +6,7 @@ It can be executed as a standalone script or imported as a module.
 """
 
 
-from __future__ import annotations
 import argparse
-
-from typing import List
 
 import pandas as pd
 import numpy as np
@@ -20,7 +17,7 @@ import openmeteo_requests
 import requests_cache
 import requests
 
-from SourceCode.utils import unzip_files
+from SourceCode.utils import unzip_files, ensure_dir
 
 import json
 import time
@@ -31,14 +28,14 @@ import os
 ####                                     Bike data                                     ###
 ##########################################################################################
 
-def unzip_archives(raw_data_folder:str, folder_list:List[str]) -> None:
+def unzip_archives(raw_data_folder:str, folder_list:list[str]) -> None:
     """Unzip all zip files in the folder list within the raw data folder.
 
     Parameters
     ----------
     raw_data_folder : str
         Folder where the raw data is stored
-    folder_list : List[str]
+    folder_list : list[str]
         List of folder names within the raw data folder to unzip
     """    
     for folder in folder_list:
@@ -69,6 +66,7 @@ def download_openmeteo_for_cities(raw_data_folder:str, start_date:str, end_date:
         Number of seconds to sleep between requests, by default 70
     """    
     open_meteo_folder = f"{raw_data_folder}/OpenMeteo"
+    ensure_dir(open_meteo_folder)
     
     city_information = {
         "LosAngeles": {
@@ -343,12 +341,12 @@ def get_zip_code(latitude: float, longitude: float) -> str | float:
 ####                                       Main                                        ###
 ##########################################################################################
 
-def main(argv: List[str] | None = None) -> None:
+def main(argv: list[str] | None = None) -> None:
     """Main function to run data acquisition steps.
 
     Parameters
     ----------
-    argv : List[str] | None, optional
+    argv : list[str] | None, optional
         List of command-line arguments, by default None
     """    
     p = argparse.ArgumentParser(description="Data acquisition for the bike-share project")

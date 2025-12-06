@@ -5,7 +5,6 @@ It is designed to be used as part of an end-to-end data curation process.
 It can be executed as a standalone script or imported as a module.
 """
 
-from narwhals import List
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.linear_model import BayesianRidge
@@ -76,6 +75,11 @@ def homogenize_metro_dataset(raw_data_folder:str) -> pd.DataFrame:
     df_metro = df_metro.rename(columns=metro_name_map)
     df_metro = df_metro.sort_values(by=["start_time"])
     df_metro = df_metro.reset_index(drop=True)
+
+    # ensure all used keys are in the dataset
+    for key in metro_name_map.values():
+        if key not in df_metro.columns:
+            df_metro[key] = np.nan
 
     return df_metro
 
@@ -156,6 +160,11 @@ def homogenize_capital_dataset(raw_data_folder:str) -> pd.DataFrame:
     df_capital = df_capital.sort_values(by=["start_time"])
     df_capital = df_capital.reset_index(drop=True)
 
+    # ensure all used keys are in the dataset
+    for key in capital_name_map.values():
+        if key not in df_capital.columns:
+            df_capital[key] = np.nan
+    
     # add bike IDs for missing bike IDs
     df_capital.loc[(df_capital["bike_id"].isna()) & (df_capital["bike_type"]=="classic_bike"), "bike_id"] = "0000_classic"   # unknown
     df_capital.loc[(df_capital["bike_id"].isna()) & (df_capital["bike_type"]=="electric_bike"), "bike_id"] = "0000_electric" # unknown
@@ -1021,12 +1030,12 @@ def rectify_coordinates(df_stations:pd.DataFrame, city_latitude:float, city_long
 ####                                        Main                                       ###
 ##########################################################################################
 
-def main(argv: List[str] | None = None) -> None:
+def main(argv: list[str] | None = None) -> None:
     """Main function to execute the data cleaning and homogenization pipeline.
 
     Parameters
     ----------
-    argv : List[str] | None, optional
+    argv : list[str] | None, optional
         Command-line arguments, by default None
     """    
 
