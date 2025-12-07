@@ -82,7 +82,8 @@ Please review `workflow_example.ipynb` to have a deeper understanding of the mai
 - **Important notes:** 
     + Scripts are intended to be used with Python 3.11.4; other versions could cause issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
     + Run the complete pipeline for all the data took **hours** and used around **32 GB RAM**, as it combines all the datasets from 2016 to 2025. Please **ensure** there are **enough resources** to run the complete datasets.
-    + If there are issues downloading the data from GitHub, please review the data sources section and download the datasets for Metro and Capital bike-share manually.
+      + If there are issues downloading the data from GitHub, please review the repository on the web browser and download the zip files in `RawData/MetroBike` and `RawData/CapitalBike` manually and replace the cloned files (LFS of sha256 - unintended files). Alternatively, download the zip files manually and replace the cloned files (LFS of sha256 - unintended files) mentioned in the data sources section, and download the datasets for Metro and Capital bike-share manually.
+    + If there are issues installing the requirements, please use `requirements_alternative.txt` to create a virtual environment.
 
 Windows PowerShell
 

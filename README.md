@@ -34,7 +34,11 @@ Key scripts
 	+ Scripts are intended to be used with Python 3.11.4, other version could case issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
 	+ Running the sample datasets is faster and less computational expensive than the full datasets; however, it takes around **20 minutes** using the *system characteristics and specifications* mentioned in `DATA_CURATION.md`.
 	+ The quick run uses the folders `RawDataExample`, `TempDataExample`, and `CuratedDataExample` to reproduce the data curation workflow using a significantly smaller sample of all available data.
-	+ If there are issues downloding the data from GitHub, please review the data sources section and download manually the datasets for Metro and Capital bike-share.
+	+ If there are issues downloading the data from GitHub, please review the repository on the web browser and download the zip files in `RawDataExample/MetroBike` and `RawDataExample/CapitalBike` manually and replace the cloned files (LFS of sha256 - unintended files). Alternatively, download the zip files manually and replace the cloned files (LFS of sha256 - unintended files) mentioned in the data sources section, and download the datasets for Metro and Capital bike-share manually.
+	+ If there are issues installing the requirements, please use `requirements_alternative.txt` to create a virtual environment that includes only the main dependencies, allowing more flexibility.
+	+ This quick run skips the demographics data to avoid the step of getting a US Census API key, so please remove the `--skip-demographics` in the command if it is desire to include demographic data.
+	+ To get a US_CENSUS_API_KEY please visit [US Census API key](https://api.census.gov/data/key_signup.html).
+	
 
 Getting started (Windows PowerShell)
 ```powershell
@@ -48,7 +52,7 @@ pip install -r requirements.txt
 $env:US_CENSUS_API_KEY = "YOUR_KEY"
 
 # Run the Python orchestrator directly
-python -m SourceCode.DataCuration.run_pipeline --raw-data .\RawDataExample --temp-data .\TempDataExample --curated-data .\CuratedDataExample --start-date "2023-01-01" --end-date "2023-04-01"
+python -m SourceCode.DataCuration.run_pipeline --raw-data .\RawDataExample --temp-data .\TempDataExample --curated-data .\CuratedDataExample --start-date "2023-01-01" --end-date "2023-04-01" --skip-demographics
 ```
 
 Getting started (macOS / Linux)
@@ -63,7 +67,7 @@ pip install -r requirements.txt
 export US_CENSUS_API_KEY="YOUR_KEY"
 
 # Use the Python orchestrator directly
-python -m SourceCode.DataCuration.run_pipeline --raw-data ./RawDataExample --temp-data ./TempDataExample --curated-data ./CuratedDataExample --start-date "2023-01-01" --end-date "2023-04-01"
+python -m SourceCode.DataCuration.run_pipeline --raw-data ./RawDataExample --temp-data ./TempDataExample --curated-data ./CuratedDataExample --start-date "2023-01-01" --end-date "2023-04-01" --skip-demographics
 ```
 
 ---
@@ -73,7 +77,9 @@ python -m SourceCode.DataCuration.run_pipeline --raw-data ./RawDataExample --tem
 - **Important notes:** 
     + Scripts are intended to be used with Python 3.11.4; other versions could cause issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
     + Run the complete pipeline for all the data took **hours** and used around **32 GB RAM**, as it combines all the datasets from 2016 to 2025. Please **ensure** there are **enough resources** to run the complete datasets.
-    + If there are issues downloading the data from GitHub, please review the data sources section and download the datasets for Metro and Capital bike-share manually.
+    + If there are issues downloading the data from GitHub, please review the repository on the web browser and download the zip files in `RawData/MetroBike` and `RawData/CapitalBike` manually and replace the cloned files (LFS of sha256 - unintended files). Alternatively, download the zip files manually and replace the cloned files (LFS of sha256 - unintended files) mentioned in the data sources section, and download the datasets for Metro and Capital bike-share manually.
+    + If there are issues installing the requirements, please use `requirements_alternative.txt` to create a virtual environment that includes only the main dependencies, allowing more flexibility.
+	+ To get a US_CENSUS_API_KEY please visit [US Census API key](https://api.census.gov/data/key_signup.html).
 
 Getting started (Windows PowerShell)
 ```powershell
