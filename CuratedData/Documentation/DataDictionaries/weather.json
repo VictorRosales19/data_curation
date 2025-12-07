@@ -52,7 +52,7 @@
     "weather_code": {
         "name": "weather_code",
         "description": "Code representing the weather conditions in WMO code",
-        "type": "float"
+        "type": "int"
     },
     "pressure_msl": {
         "name": "pressure_msl",

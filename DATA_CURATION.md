@@ -80,9 +80,9 @@ Please review `workflow_example.ipynb` to have a deeper understanding of the mai
 ## How to run the pipeline
 
 - **Important notes:** 
-	+ Scripts are intended to be used with Python 3.11.4, other version could case issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
-	+ Run complete full pipeline for all the data took hours and used around 32 GB RAM, as it combine all the datasets from 2016 to 2025, please ensure the are enough resources to run the full datasets.
-	+ If there are issues downloding the data from GitHub, please review the data sources section and download manually the datasets for Metro and Capital bike-share.
+    + Scripts are intended to be used with Python 3.11.4; other versions could cause issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
+    + Run the complete pipeline for all the data took **hours** and used around **32 GB RAM**, as it combines all the datasets from 2016 to 2025. Please **ensure** there are **enough resources** to run the complete datasets.
+    + If there are issues downloading the data from GitHub, please review the data sources section and download the datasets for Metro and Capital bike-share manually.
 
 Windows PowerShell
 

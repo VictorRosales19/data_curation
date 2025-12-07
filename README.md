@@ -28,11 +28,12 @@ Key scripts
 
 ---
 
-## How to run data curation workflow (Sample datasets - Fast for quick runs)
+## How to run data curation workflow (Sample datasets - Enable quicker runs)
 
 - **Important notes:** 
 	+ Scripts are intended to be used with Python 3.11.4, other version could case issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
 	+ Running the sample datasets is faster and less computational expensive than the full datasets; however, it takes around **20 minutes** using the *system characteristics and specifications* mentioned in `DATA_CURATION.md`.
+	+ The quick run uses the folders `RawDataExample`, `TempDataExample`, and `CuratedDataExample` to reproduce the data curation workflow using a significantly smaller sample of all available data.
 	+ If there are issues downloding the data from GitHub, please review the data sources section and download manually the datasets for Metro and Capital bike-share.
 
 Getting started (Windows PowerShell)
@@ -67,12 +68,12 @@ python -m SourceCode.DataCuration.run_pipeline --raw-data ./RawDataExample --tem
 
 ---
 
-## How to run data curation workflow (Full datasets - Time and Computer resources expensive)
+## How to run data curation workflow (Full datasets - Time-consuming  and computationally expensive)
 
 - **Important notes:** 
-	+ Scripts are intended to be used with Python 3.11.4, other version could case issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
-	+ Run complete full pipeline for all the data took hours and used around 32 GB RAM, as it combine all the datasets from 2016 to 2025, please ensure the are enough resources to run the full datasets.
-	+ If there are issues downloding the data from GitHub, please review the data sources section and download manually the datasets for Metro and Capital bike-share.
+    + Scripts are intended to be used with Python 3.11.4; other versions could cause issues with the execution. Example, type hinting with `list[str]` without the `typing` module is only supported in Python 3.9 and later. 
+    + Run the complete pipeline for all the data took **hours** and used around **32 GB RAM**, as it combines all the datasets from 2016 to 2025. Please **ensure** there are **enough resources** to run the complete datasets.
+    + If there are issues downloading the data from GitHub, please review the data sources section and download the datasets for Metro and Capital bike-share manually.
 
 Getting started (Windows PowerShell)
 ```powershell
