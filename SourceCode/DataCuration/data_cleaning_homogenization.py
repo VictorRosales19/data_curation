@@ -953,6 +953,9 @@ def generate_weather_dataframe(raw_data_folder:str) -> pd.DataFrame:
     df_weather["date"] = df_weather["date"].str.replace(r"[+-]\d{2}:\d{2}", "", regex=True) # change to local time
     df_weather["date"] = pd.to_datetime(df_weather["date"])
 
+    # ensure weather code is integer
+    df_weather["weather_code"] = df_weather["weather_code"].astype(int)
+
     # add unique identifiers
     seed_value = 6
     random.seed(seed_value) # Set a seed for reproducibility
